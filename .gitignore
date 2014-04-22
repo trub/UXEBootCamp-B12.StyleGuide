@@ -13,3 +13,7 @@ node_modules/
 ehthumbs.db
 Thumbs.db
 
+# Package dependencies
+######################
+node_modules/
+bower_components
