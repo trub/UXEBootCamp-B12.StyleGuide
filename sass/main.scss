@@ -1,75 +1,72 @@
-@import "bourbon";
+@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
 
-body {
-  @include backface-visibility(visible);
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #fff4f5;
 }
 
-//MENU
-@import "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
-
-.circular-menu {
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
+.menu li a {
+  display: block;
+  height: em;
+  width: 10em;
+  text-indent: 3.25em;
+  line-height: 3em;
+  text-align: left;
+  color: #ff5c62;
+  background: #fff4f5;
   position: relative;
-}
-
-.circle {
-  width: 250px;
-  height: 250px;
-  opacity: 0;
-  
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  transform: scale(0);
-
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-}
-
-.open.circle {
-  opacity: 1;
-
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  transform: scale(1);
-}
-
-.circle a {
+  border-bottom: 1px solid #ffe2e3;
   text-decoration: none;
-  color: white;
-  display: block;
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  margin-left: -20px;
-  margin-top: -20px;
+  transition: background 0.3s ease-in-out;
+ }
+
+.menu li a:before {
+  font-family: FontAwesome;
+  text-indent: 0.75em;
   position: absolute;
-  text-align: center;
-
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  font-size: 1.4em;
+ 
+}
+.menu li a.search:before {
+  content: "\f002";
+}
+.menu li a.archive:before {
+  content: "\f187";
+}
+.menu li a.pencil:before {
+  content: "\f040";
+}
+.menu li a.contact:before {
+  content: "\f003";
+}
+.menu li a.about:before {
+  content: "\f007";
+}
+.menu li a.home:before {
+  content: "\f015";
+}
+.menu li a:hover{
+  background: #ff5c62;
+  color: #fff;
 }
 
-.circle a:hover {
-  color: #eef;
+.menu li a:active {
+  background: #ff5c62;
+  color: #fff;
 }
 
-.menu-button {
-  position: absolute;
-  top: calc(50% - 10px);
-  left: calc(50% - 30px);
-  text-decoration: none;
-  text-align: center;
-  color: #444;
-  border-radius: 50%;
-  display: block;
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  padding: 10px;
-  background: #dde;
-}
-
-.menu-button:hover {
-  background-color: #eef;
+@media screen and (max-height: 34em){
+  .menu li{
+    font-size:80%;
+  }
 }
