@@ -8,8 +8,10 @@ module.exports = function(grunt) {
         options: {
           includePaths: [
             './bower_components/bower-bourbon',
+            './bower_components/bower-neat',
             './bower_components/color-scale',
-            './bower_components/type-rhythm-scale'
+            './bower_components/type-rhythm-scale',
+            './bower_components/rwd-toolkit'
           ]
         }
       }
