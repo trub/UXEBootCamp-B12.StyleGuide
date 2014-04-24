@@ -1,20 +1,31 @@
 //global styles
-// body{
-//   width: 100%;
-// }
 
-// img, object, video{
-//   max-width: 100%;
-// }
-
-nav{
-   @include span-columns(3);
+body {
+  width:100%;
+  margin-top: 2em;
 }
+
 nav a{
    display: block;
    position: fixed;
+   width:5em;
+   left:0;
+   top:0;
+   height:100%;
+   background: red;
 }
 
-body{
-   @include span-columns(9);
+#wrapper {
+  @include outer-container;
+}
+
+article {
+  @include span-columns(10);
+  @include shift(1);
+
+}
+
+.alpha-palette {
+  @include span-columns(6);
+  @include shift(3);
 }
