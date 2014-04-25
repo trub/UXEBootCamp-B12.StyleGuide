@@ -5,10 +5,15 @@ body {
   margin-top: 2em;
 }
 
+img{
+  max-width: 100%;
+}
+
 nav {
    display: block;
    position: fixed;
    width:11em;
+   padding-left: 1em;
    left:0;
    top:0;
    height:100%;
@@ -18,7 +23,6 @@ nav {
 a {
   display: block;
   position: relative;
-  text-indent: 2em;
   padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
@@ -28,12 +32,13 @@ nav a:first-child {
 
 #wrapper {
   @include outer-container;
+  //override grid settings
+  margin-left: 10em;
 }
 
 article {
   @include span-columns(10);
   @include shift(1);
-
 }
 
 div[class*='.alpha-'], div[class*='.bravo-'], div[class*='.charlie-'], div[class*='.delta-'], span  {
@@ -48,4 +53,8 @@ div[class*='.alpha-'], div[class*='.bravo-'], div[class*='.charlie-'], div[class
   border: 1px solid white;
   background-color:orange;
 }
+
+///////////////////
+//APPLICATION STYLES - use .app-* class
+///////////////////
 
