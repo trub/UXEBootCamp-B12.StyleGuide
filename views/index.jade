@@ -22,30 +22,28 @@ block content
           li We add new patterns only when the case for doing so is sound. New patterns come at a high cost—they require new design elements, additional code, maintenance, and they increase the cognitive load on users.
       article
         h1(id="colors") Colors
-        ul(class="palette")
-          li(class="alpha-palette")
-            code $alpha-primary-primary 
-            code #F11524
-          li(class="bravo-palette")
-            code $bravo-primary 
-            code #1E8042 
-          li(class="charlie-palette")
-            code $charlie-primary 
-            code #F7E257
-          li(class="delta-palette")
-            code $delta-primary 
-            code #3769C7
-          li(class="echo-palette")
-            code $echo-primary 
-            code #FB832C
+        div(class="palette")
+          div(class="alpha-palette") 
+            span $alpha-primary 
+            #F11524 
+          div(class="bravo-palette")
+            span $bravo-primary 
+            #1E8042 
+          div(class="charlie-palette")
+            span $charlie-primary 
+            #F7E257
+          div(class="delta-palette")
+            span $delta-primary 
+            #3769C7
+          div(class="echo-palette")
+            span $echo-primary 
+            #FB832C
       article
         h1(id="typography") Typography
         h1 This is an h1 (Main Head)
         h2 This is an h2 (Subhead)
         h3 This is an h3
         h4 This is an h4
-        h5 This is an h5
-        h6 This is an h6
         p This is a paragraph about Dale.
         a(href="#") This is a link
         section(class="show-code")
@@ -72,7 +70,7 @@ block content
             a(href="#" class="copy-source") Copy HTML
             p This is a paragraph.
       article
-        h1(id="buttons") UI Components
+        h1(id="ui") UI Components
         section(class="show-code")
           a(href="#" class="js-show-code") Show Code
           a(href="#" class="js-hide-code") Hide Code
