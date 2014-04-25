@@ -39,6 +39,8 @@ nav a:first-child {
 article {
   @include span-columns(10);
   @include shift(1);
+  border-bottom: 1px dotted black;
+  padding-bottom: 2em;
 }
 
 div[class*='.alpha-'], div[class*='.bravo-'], div[class*='.charlie-'], div[class*='.delta-'], span  {
@@ -53,6 +55,30 @@ div[class*='.alpha-'], div[class*='.bravo-'], div[class*='.charlie-'], div[class
   border: 1px solid white;
   background-color:orange;
 }
+
+.palette .alpha-palette p {
+  margin-top: 80px;
+}
+
+.html-code {
+display: block;
+}
+
+pre {
+  @include span-columns(6);
+  @include pad();
+  display: block;
+  background-color: whitesmoke;
+  overflow: auto;
+  word-break: normal;
+  word-wrap: break-word;
+  height: 10em;
+}
+
+code {
+  overflow: scroll;
+}
+
 
 ///////////////////
 //APPLICATION STYLES - use .app-* class
