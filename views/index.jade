@@ -2,6 +2,7 @@ extends layout
 
 block content
   nav
+    h2 Style Guide
     a(href="#" id="tag-guidelines") Guidelines
     a(href="#" id="tag-color") Color
     a(href="#" id="tag-typography") Typography
@@ -23,17 +24,31 @@ block content
       article
         h1(id="colors") Colors
         div(class="palette")
-          div(class="alpha-palette")
-            p
-              span #F6123
-          div(class="bravo-palette")
+          div(class="color-wrapper")
+            div(class="alpha-palette")
             span 
-          div(class="charlie-palette")
+            p #666666
+            p $alpha-palette
+          div
+            div(class="bravo-palette")
             span 
-          div(class="delta-palette")
+            p #666666
+            p $bravo-palette
+          div
+            div(class="charlie-palette")
             span 
-          div(class="echo-palette")
+            p #666666
+            p $charlie-palette
+          div
+            div(class="delta-palette")
             span 
+            p #666666
+            p $delta-palette
+          div
+            div(class="echo-palette")
+            span 
+            p #666666
+            p $echo-palette 
       article
         h1(id="typography") Typography
         h1 This is an h1 (Main Head)
@@ -42,50 +57,49 @@ block content
         h4 This is an h4
         p This is a paragraph about Dale.
         a(href="#") This is a link
-        section(class="show-code")
-          a(href="#" class="js-show-code") Show Code
-          a(href="#" class="js-hide-code") Hide Code
-          div(class="html-code")
-            a(href="#" class="copy-source") Copy HTML
-            p This is a paragraph.
       article
         h1(id="icons") Icons
-        section(class="show-code")
-          a(href="#" class="js-show-code") Show Code
-          a(href="#" class="js-hide-code") Hide Code
-          div(class="html-code")
-            a(href="#" class="copy-source") Copy HTML
-            pre(class="code-block")
-              code here is code. here is code. here is code. ere is code. here is code. here is code. here is code. here is code. here is code. ere is code. here is code. here is code. vhere is code. here is code. here is code. ere is code. here is code. here is code. 
-            pre(class="code-block")
-              code here is code
+        div
+          a(href="" class="oi" data-glyph="account-login") Login
+          a(href="" class="oi" data-glyph="account-logout") Logout
+          a(href="" class="oi" data-glyph="align-left") 
+          a(href="" class="oi" data-glyph="align-right")
+          a(href="" class="oi" data-glyph="arrow-left")
+          a(href="" class="oi" data-glyph="arrow-right") 
+          a(href= "" class="oi" data-glyph="ban" title="icon name" aria-hidden="true")
+        div()
+          pre(class="code-block")
+            code here is code. here is code. here is code. ere is code. here is code. here is code. here is code. here is code. here is code. ere is code. here is code. here is code. vhere is code. here is code. here is code. ere is code. here is code. here is code. 
+          pre(class="code-block")
+            code= '<h4> NICE NATTY </h4>'
       article
         h1(id="buttons") Buttons
-        section(class="show-code")
+        div(class="btnDiv")
           a(href='', title='Button push tomato', class="button btnPush btnTomato") Push
           a.button.btnPush.btnBlueGreen(href='', title='Button push blue/green') Push
           a.button.btnPush.btnLightBlue(href='', title='Button push lightblue') Push
           a.button.btnPush.btnOrange(href='', title='Button push orange') Push
           a.button.btnPush.btnPurple(href='', title='Button push purple') Push
-          div(class="html-code")
-            a(href="#" class="copy-source") Copy HTML
-            p This is a paragraph.
+        div()
+          pre(class="code-block")
+            code here is code. here is code. here is code. ere is code. here is code. here is code. here is code. here is code. here is code. ere is code. here is code. here is code. vhere is code. here is code. here is code. ere is code. here is code. here is code. 
+          pre(class="code-block")
+            code= '<h2>here is code</h2>'
       article
         h1(id="ui") UI Components
         section(class="show-code")
-          a(href="#" class="js-show-code") Show Code
-          a(href="#" class="js-hide-code") Hide Code
-          div(class="html-code")
-            a(href="#" class="copy-source") Copy HTML
-            p This is a paragraph.
+          div()
+            pre(class="code-block")
+              code= '<p>here is code. here is code. here is code. ere is code. here is code. here is code. here is code. here is code. here is code. ere is code. here is code. here is code. vhere is code. here is code. here is code. ere is code. here is code. here is code.' 
+            pre(class="code-block")
+              code= '<h2>here is code</h2>'
       article
         h1(id="mobile") Mobile
         section(class="show-code")
-          a(href="#" class="js-show-code") Show Code
-          a(href="#" class="js-hide-code") Hide Code
-          div(class="html-code")
-            a(href="#" class="copy-source") Copy HTML
-            p This is a paragraph.
-
+          div()
+            pre(class="code-block")
+              code here is code. here is code. here is code. ere is code. here is code. here is code. here is code. here is code. here is code. ere is code. here is code. here is code. vhere is code. here is code. here is code. ere is code. here is code. here is code. 
+            pre(class="code-block")
+              code= '<h2>here is code</h2>'
 
 
