@@ -1,11 +1,9 @@
-@import "partials/reset";
+@import "reset";
 @import "bourbon";
 @import "neat";
 @import "type-rhythm-scale";
 @import "rwd-toolkit";
-@import "partials/buttons";
-@import "partials/colors";
-@import "partials/layout";
-@import "partials/mixins";
-@import "partials/modules";
-@import "typography";
+@import "mixins";
+@import "modules";
+@import "layout";
+

@@ -17,29 +17,26 @@ nav {
    top:0;
    height:100%;
    background-color: #fdfdfd;
-}
-
-nav a, {
+   border-right: 1px solid #cdcdcd;
+  a {
     padding: 0.5em 0.5em 0.5em 0.5em;
-
+    color: lightskyblue;
+    &:first-child{
+    padding-top: 4.5em; 
+    }
+  }
+  a, h2 {
+    display: block;
+    position: relative;
+    text-decoration: none;
+  }
+  h2 {
+    padding: 0.2em;
+  }
 }
 
-a, nav h2 {
-  display: block;
-  position: relative;
-  text-decoration: none;
-}
-
-nav a:first-child {
-  padding-top: 4.5em;
-}
-
-nav h2 {
-  padding:  0.2em;
-}
 //Global Body styles
-
-#wrapper {
+#sg-wrapper {
   @include outer-container;
   //override grid settings
   margin-left: 10em;
@@ -51,13 +48,12 @@ article {
   padding-bottom: 2em;
 }
 // Color palette horizontal block
-.palette {
+.sg-palette {
   display: flex;
   justify-content: space-between;
-}
-
-.palette p { 
-  text-align: center;
+  p {
+    text-align: center;
+  }
 }
 
 // Color palette circular blocks
@@ -71,13 +67,6 @@ span  {
   border-radius: 50%;
   margin: 1em 1em;
   border: 1px solid white;
-  background-color:orange;
-}
-
-// Code examples
-.html-code {
-display: block;
-margin-top: 2em;
 }
 
 // Code samples
@@ -100,8 +89,11 @@ code {
   overflow: scroll;
 }
 
-//Button positioning
-.btnDiv {
+//Button + Icon positioning
+.sg-displayFlex {
   display: flex;
   justify-content: space-between;
 }
+
+
+
