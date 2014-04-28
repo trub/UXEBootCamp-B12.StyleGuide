@@ -8,7 +8,6 @@ body {
 img{
   max-width: 100%;
 }
-
 nav {
    display: block;
    position: fixed;
@@ -17,7 +16,7 @@ nav {
    left:0;
    top:0;
    height:100%;
-   background: whitesmoke;
+   background-color: #fdfdfd;
 }
 
 nav a, {
@@ -38,20 +37,20 @@ nav a:first-child {
 nav h2 {
   padding:  0.2em;
 }
+//Global Body styles
 
 #wrapper {
   @include outer-container;
   //override grid settings
   margin-left: 10em;
 }
-
 article {
   @include span-columns(10);
   @include shift(1);
   border-bottom: 1px dotted black;
   padding-bottom: 2em;
 }
-
+// Color palette horizontal block
 .palette {
   display: flex;
   justify-content: space-between;
@@ -61,6 +60,7 @@ article {
   text-align: center;
 }
 
+// Color palette circular blocks
 span  {
   @include span-columns(6);
   @include shift(3);
@@ -74,12 +74,13 @@ span  {
   background-color:orange;
 }
 
-
+// Code examples
 .html-code {
 display: block;
 margin-top: 2em;
 }
 
+// Code samples
 pre {
   @include span-columns(6);
   @include pad();
@@ -94,16 +95,12 @@ pre {
   border-top: 1px solid darkgrey;
   border-bottom: 1px solid darkgrey;
 }
-
+// Code samples overflow
 code {
   overflow: scroll;
 }
 
-
-///////////////////
-//APPLICATION STYLES - use .app-* class
-///////////////////
-
+//Button positioning
 .btnDiv {
   display: flex;
   justify-content: space-between;
