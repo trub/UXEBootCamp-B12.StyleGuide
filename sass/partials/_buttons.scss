@@ -18,8 +18,8 @@ a.button {
 
 .btnTomato {
   background: tomato;
-  .btnPush {
-  box-shadow: 0px 5px 0px 0px red;
+  &.btnPush {
+    box-shadow: 0px 5px 0px 0px red;
   &:hover {
       box-shadow: 0px 0px 0px 0px red;
     }
@@ -28,8 +28,8 @@ a.button {
 
 .btnBlueGreen {
   background: #00AE68;
-  .btnBlueGreen.btnPush {
-  box-shadow: 0px 5px 0px 0px #007144;
+  &.btnPush {
+     box-shadow: 0px 5px 0px 0px #007144;
   &:hover {
       box-shadow: 0px 0px 0px 0px #007144;
     }
@@ -38,8 +38,8 @@ a.button {
 
 .btnLightBlue {
   background: #5DC8CD;
-  .btnLightBlue.btnPush {
-  box-shadow: 0px 5px 0px 0px #1E8185;
+  &.btnPush {
+    box-shadow: 0px 5px 0px 0px #1E8185;
    &:hover {
       box-shadow: 0px 0px 0px 0px #1E8185;
 
@@ -49,8 +49,8 @@ a.button {
 
 .btnOrange {
   background: #FFAA40;
-  .btnOrange.btnPush {
-  box-shadow: 0px 5px 0px 0px #A66615;
+  &.btnPush {
+    box-shadow: 0px 5px 0px 0px #A66615;
   &:hover {
       box-shadow: 0px 0px 0px 0px #A66615;
 
@@ -60,7 +60,7 @@ a.button {
 
 .btnPurple {
   background: #A74982;
-  .btnPurple.btnPush {
+  &.btnPush {
   box-shadow: 0px 5px 0px 0px #6D184B;
   &:hover {
       box-shadow: 0px 0px 0px 0px #6D184B;
@@ -68,6 +68,12 @@ a.button {
     }
   }
 }
+
+.btnPush:hover {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
 
 
 

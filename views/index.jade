@@ -21,70 +21,10 @@ block content
           li We can reuse code instead of roping in a developer
           li We can maintain our code by seeing our patterns in one place, define elements in our application, and keep redundancy to a minimum
           li We add new patterns only when the case for doing so is sound. New patterns come at a high cost—they require new design elements, additional code, maintenance, and they increase the cognitive load on users.
-      article
-        h1(id="colors") Colors
-        div(class="palette")
-          div(class="color-wrapper")
-            div(class="alpha-palette")
-            span 
-            p #666666
-            p $alpha-palette
-          div
-            div(class="bravo-palette")
-            span 
-            p #666666
-            p $bravo-palette
-          div
-            div(class="charlie-palette")
-            span 
-            p #666666
-            p $charlie-palette
-          div
-            div(class="delta-palette")
-            span 
-            p #666666
-            p $delta-palette
-          div
-            div(class="echo-palette")
-            span 
-            p #666666
-            p $echo-palette 
-      article
-        h1(id="typography") Typography
-        h1 This is an h1 (Main Head)
-        h2 This is an h2 (Subhead)
-        h3 This is an h3
-        h4 This is an h4
-        p This is a paragraph about Dale.
-        a(href="#") This is a link
-      article
-        h1(id="icons") Icons
-        div
-          a(href="" class="oi" data-glyph="account-login") Login
-          a(href="" class="oi" data-glyph="account-logout") Logout
-          a(href="" class="oi" data-glyph="align-left") 
-          a(href="" class="oi" data-glyph="align-right")
-          a(href="" class="oi" data-glyph="arrow-left")
-          a(href="" class="oi" data-glyph="arrow-right") 
-          a(href= "" class="oi" data-glyph="ban" title="icon name" aria-hidden="true")
-        div()
-          pre(class="code-block")
-            code here is code. here is code. here is code. ere is code. here is code. here is code. here is code. here is code. here is code. ere is code. here is code. here is code. vhere is code. here is code. here is code. ere is code. here is code. here is code. 
-          pre(class="code-block")
-            code= '<h4> NICE NATTY </h4>'
-      article
-        h1(id="buttons") Buttons
-        div(class="btnDiv")
-          a(href='', title='Button push tomato', class="button btnPush btnTomato") Push
-          a.button.btnPush.btnBlueGreen(href='', title='Button push blue/green') Push
-          a.button.btnPush.btnLightBlue(href='', title='Button push lightblue') Push
-          a.button.btnPush.btnOrange(href='', title='Button push orange') Push
-          a.button.btnPush.btnPurple(href='', title='Button push purple') Push
-        div()
-          pre(class="code-block")
-            code here is code. here is code. here is code. ere is code. here is code. here is code. here is code. here is code. here is code. ere is code. here is code. here is code. vhere is code. here is code. here is code. ere is code. here is code. here is code. 
-          pre(class="code-block")
-            code= '<h2>here is code</h2>'
-     
+      include colors      
+      include typography
+      include icons
+      include buttons    
+      
 
 
