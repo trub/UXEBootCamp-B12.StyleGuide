@@ -50,8 +50,10 @@ article {
 .sg-palette {
   display: flex;
   justify-content: space-between;
+  margin-top: -0.5em;
   p {
     text-align: center;
+    margin-top: 0;
   }
 }
 
@@ -89,7 +91,7 @@ code {
 }
 
 //Code Titles
-.code-titles h4 {
+.sg-code-titles h4 {
   @include span-columns(6);
   margin-bottom: -1em;
 }
@@ -100,5 +102,7 @@ code {
   justify-content: space-between;
 }
 
-
+.sg-type-space {
+  margin: 3em 0;
+}
 
