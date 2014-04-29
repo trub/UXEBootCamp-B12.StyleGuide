@@ -1,3 +1,11 @@
+@include font-face(Avenir, '../fonts/AvenirLTStd-Heavy', bold);
+@include font-face(Sentinel, '../fonts/Sentinel-Book', normal);
+
+
+$header-fonts: "Avenir", Helvetica, Arial, sans-serif;
+$body-fonts: "Sentinel", Garamond, Times, serif;
+
+
 $iconic-font-path: '../fonts/';
 
 @font-face {
