@@ -7,8 +7,65 @@ block buttons
       a(href="" class="oi btn Charlie" data-glyph="trash" title="trash" aria-hidden="true") Trash
       a(href="" class="oi btn Delta" data-glyph="account-logout") Logout
       a(href="" class="oi btn Echo" data-glyph="calendar" title="calendar" aria-hidden="true") Calendar
-    div()
+    div(class="code-titles")
+      h4 HTML
+      h4 SCSS
+    div
       pre
-        code here is code. here is code. here is code. ere is code. here is code. here is code. here is code. here is code. here is code. ere is code. here is code. here is code. vhere is code. here is code. here is code. ere is code. here is code. here is code. 
+        code(class="language-markup")
+          ='<a href="" class="oi btn Alpha" data-glyph="heart" title="heart" aria-hidden="true">Heart </a> <a href="" class="oi btn Bravo" data-glyph="paperclip" title="paperclip" aria-hidden="true"> Add </a>' 
+          ='<a href="" class="oi btn Charlie" data-glyph="trash" title="trash" aria-hidden="true"> Trash </a>'  
+          ='<a href="" class="oi btn Delta" data-glyph="account-logout"> Logout </a>'
+          ='<a href="" class="oi btn Echo" data-glyph="calendar" title="calendar" aria-hidden="true"> Calendar </a>'      
       pre
-        code= '<h2>here is code</h2>'
+        code(class="language-scss").
+          .btn{
+            position: relative;
+            width: 120px;
+            padding: 0;
+            margin: 10px 20px 10px 0;
+            font-weight: 600;
+            text-align: center;
+            line-height: 50px;
+            color: #FFF;
+            border-radius: .3em;
+            transition: all 0.2s;
+            text-decoration: none;
+            &:before {
+              margin-right: .5em;
+            }
+          }
+          .Alpha {
+            background: $alpha-palette;
+            &:hover {
+            background-color: darken($alpha-palette, 10%);
+            }
+          }
+
+          .Bravo {
+            background:  $bravo-palette;
+             &:hover {
+            background-color: darken($bravo-palette, 10%);
+            }
+          }
+
+          .Charlie {
+            background: $charlie-palette;
+             &:hover {
+            background-color: darken($charlie-palette, 10%);
+            }
+          }
+
+          .Delta {
+            background: $delta-palette;
+             &:hover {
+            background-color: darken($delta-palette, 10%);
+            }
+          }
+
+          .Echo {
+            background: $echo-palette;
+             &:hover {
+            background-color: darken($echo-palette, 10%);
+            }
+          }

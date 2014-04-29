@@ -11,9 +11,47 @@ block icons
       a(href="" class="oi" data-glyph="map" title="map" aria-hidden="true")
       a(href="" class="oi" data-glyph="external-link" title="external link" aria-hidden="true")
       a(href="" class="oi" data-glyph="calendar" title="calendar" aria-hidden="true")   
+    div(class="code-titles")
+      h4 HTML
+      h4 SCSS
     div
       pre
-        code here is code. here is code. here is code. ere is code. here is code. here is code. here is code. here is code. here is code. ere is code. here is code. here is code. vhere is code. here is code. here is code. ere is code. here is code. here is code. 
+        code(class="language-markup")
+          ='<a href="" class="oi" data-glyph="heart" title="heart" aria-hidden="true"> </a> <a href="" class="oi" data-glyph="paperclip" title="paperclip" aria-hidden="true">  </a>' 
+          ='<a href="" class="oi" data-glyph="trash" title="trash" aria-hidden="true">  </a>'  
+          ='<a href="" class="oi" data-glyph="account-logout">  </a>'
+          ='<a href="" class="oi" data-glyph="calendar" title="calendar" aria-hidden="true">  </a>'      
+    
       pre
-        code= '<h4> NICE NATTY </h4>'
+        code(class="language-scss").
+          .oi[data-glyph=account-logout]:before {
+              content: '\e000';
+            }
+          .oi[data-glyph=heart]:before {
+            content: '\e073';
+          }
+          .oi[data-glyph=trash]:before {
+              content: '\e0cb';
+            }
+          .oi[data-glyph=microphone]:before {
+            content: '\e098';
+          }
+          .oi[data-glyph=paperclip]:before {
+              content: '\e09e';
+            }
+          .oi[data-glyph=link-intact]:before {
+            content: '\e073';
+          }
+          .oi[data-glyph=map]:before {
+              content: '\e08d';
+            }
+          .oi[data-glyph=external-link]:before {
+            content: '\e061';
+          }
+          .oi[data-glyph=calendar]:before {
+            content: '\e02a';
+          }
+
+
+
 

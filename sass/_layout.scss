@@ -88,6 +88,12 @@ code {
   overflow: scroll;
 }
 
+//Code Titles
+.code-titles h4 {
+  @include span-columns(6);
+  margin-bottom: -1em;
+}
+
 //Button + Icon positioning
 .sg-displayFlex {
   display: flex;
