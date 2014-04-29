@@ -1,17 +1,17 @@
 extends layout
 
 block content
-  nav
+  nav(id="scroll")
     h2 Style Guide
-    a(href="#guidelines") Guidelines
-    a(href="#colors") Color
-    a(href="#type-style") Typography
-    a(href="#iconography") Icons
-    a(href="#btn") Buttons
+    a(href="javascript:void(0)" onclick="$('#guidelines').animatescroll();") Guidelines
+    a(href="javascript:void(0)" onclick="$('#colors').animatescroll();") Color
+    a(href="javascript:void(0)" onclick="$('#type-style').animatescroll();") Typography
+    a(href="javascript:void(0)" onclick="$('#iconography').animatescroll();") Icons
+    a(href="javascript:void(0)" onclick="$('#btn').animatescroll();") Buttons
   body
     div(id="sg-wrapper")
-      article
-        h1(id="guidelines") User Interface Guidelines
+      article(id="guidelines") 
+        h1 User Interface Guidelines
         p The User Interface Style Guide is here to help maintain your brand across multiple platforms (desktop, tablet, mobile, ios, android, etc) and across multiple markets. Constant iteration requires both an efficient workflow and a well defined collection of core UI elements that can be assembled quickly. Reinventing the wheel is out and standards are in.
         p This documentation references our core UI patterns. It is our hope this guide will decrease uncertainty in the workplace and increase efficiency. This uniform lexicon of code and UI elements benefits us in a many ways:
         ul
