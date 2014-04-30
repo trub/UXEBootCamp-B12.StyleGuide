@@ -1,25 +1,37 @@
-.alpha-palette{
+.alpha-palette {
 	span {
-	background-color: $alpha-palette;
-}
-}
-
-.bravo-palette span {
-	background-color: $bravo-palette;
+		background-color: $alpha-palette;
+	}
 }
 
-.charlie-palette span {
-	background-color: $charlie-palette;
+.bravo-palette  {
+	span{
+		background-color: $bravo-palette;
+	}
 }
 
-.delta-palette span {
-	background-color: $delta-palette;
+.charlie-palette {
+	span {
+		background-color: $charlie-palette;
+	}
 }
 
-.echo-palette span {
-	background-color: $echo-palette;
+.delta-palette {
+	span {
+		background-color: $delta-palette;
+	}
+}
+
+.echo-palette  {
+	span{
+		background-color: $echo-palette;
+	}
 }
 
 a {
 	color: $echo-palette;
+	transition: color .25s;
+	&:hover{
+		color:$delta-palette;
+	}
 }
