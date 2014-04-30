@@ -8,6 +8,8 @@ body {
 img{
   max-width: 100%;
 }
+
+//navigation block styles
 nav {
    display: block;
    position: fixed;
@@ -18,11 +20,21 @@ nav {
    height:100%;
    background-color: #fdfdfd;
    border-right: 1px solid #cdcdcd;
+    @include media($tablet) {
+          width:5em;
+     }
+   @include media($mobile) {
+        display:none;
+   }
   a {
     padding: 0.5em 0.5em 0.5em 0.5em;
     &:first-child{
-    padding-top: 4.5em; 
+      padding-top: 1.5em; 
     }
+  }
+  ul, li{
+    list-style: none;
+    text-indent: -2.5em;
   }
   a, h2 {
     display: block;
@@ -39,6 +51,9 @@ nav {
   @include outer-container;
   //override grid settings
   margin-left: 10em;
+  @include media($mobile) {
+    margin-left: 0;
+  }
 }
 article {
   @include span-columns(10);
@@ -104,5 +119,9 @@ code {
 
 .sg-type-space {
   margin: 3em 0;
+}
+
+.panel {
+  background-color: orange;
 }
 
