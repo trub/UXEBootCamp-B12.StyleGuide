@@ -200,12 +200,12 @@ button {
   font-size: .75em;
   text-transform: uppercase;
   color:white;
-  background-color: teal;
+  background-color: lightgrey;
   padding: .6em .75em;
   border-radius: .2em;
   transition:.25s all;
   &:hover{
-    background-color: darken(teal,10%);
+    background-color: teal;
   }
   &:after{
     content:'\25b6';
