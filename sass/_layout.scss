@@ -12,17 +12,26 @@ img{
 //navigation block styles
 nav {
    display: block;
+   z-index: 1;
    position: fixed;
    width:11em;
    padding-left: 1em;
    left:0;
    top:0;
+
    height:100%;
-   background-color: #fdfdfd;
-   border-right: 1px solid #cdcdcd;
+   @include media($desktop) {
+    left:0em;
+   }
+   @include transition (all .25s ease-in-out);
+   background-color: whitesmoke;
     @include media($tablet) {
-          display:none
+      left: -9em;
+      background-color: white;
      }
+    .menu {
+      display: block;
+    }
   a {
     padding: 0.5em 0.5em 0.5em 0.5em;
     &:first-child{
@@ -43,6 +52,8 @@ nav {
   }
 }
 
+
+
 //Global Body styles
 #sg-wrapper {
   @include outer-container;
@@ -51,6 +62,7 @@ nav {
   @include media($tablet) { 
     margin-left: 0;
   }
+  @include transition (all .25s ease-in-out);
 }
 article {
   @include span-columns(10);
@@ -125,17 +137,71 @@ code {
   margin-bottom: -1em;
 }
 
-//Button + Icon positioning
+//Icon positioning
 .sg-displayFlex {
   display: flex;
   justify-content: space-between;
 }
 
+// Icon + text positioning within buttons
 .sg-type-space {
   margin: 3em 0;
 }
 
-.panel {
-  background-color: orange;
+//shift button containers
+.sg-button-container {
+  @include shift(1.5);
+  @include media($tablet) {
+    @include shift(1);
+  }
+  @include media($mobile) {
+    @include shift(0);
+  }
 }
+
+//button media queries
+button {
+  margin: 10px 10px;
+  @include media($tablet) {
+    margin: 0 1.4em;
+  }
+  @include media($mobile) {
+      margin: 0 .8em;
+  }
+  span {
+    @include media ($tablet) {
+        display:none;
+        
+    }
+}
+}
+
+//OFF CANVAS NAV
+.mobile-nav{
+  @include transform(translateX(9em));
+  @include transition (all .25s ease-in-out);
+  background-color: whitesmoke;
+
+}
+
+.off-canvas-nav {
+  margin-left: 10em;
+  z-index: 999;
+  display: none;
+  @include media($tablet) {
+    position: absolute;
+    top: -1em;
+    left: -1em;
+    display: block;
+  }
+}
+
+.sg-canvas{
+  @include transform(translateX(10em));
+  @include transition (all .25s ease-in-out);
+
+}
+
+
+
 

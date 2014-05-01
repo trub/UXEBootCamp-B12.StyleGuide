@@ -1,23 +1,15 @@
 extends layout
 
 block content
-  body 
-      div
-        a(href="#menu" class="oi" data-glyph="grid-three-up" title="grid-three-up" aria-hidden="true")
-      div 
-        nav(class="hide" id="menu")
-          h2 Style Guide
-          ul
-            li
-              a(href="javascript:void(0)" onclick="$('#guidelines').animatescroll();") Guidelines
-            li
-              a(href="javascript:void(0)" onclick="$('#colors').animatescroll();") Color
-            li
-              a(href="javascript:void(0)" onclick="$('#type-style').animatescroll();") Typography
-            li
-              a(href="javascript:void(0)" onclick="$('#iconography').animatescroll();") Icons
-            li
-              a(href="javascript:void(0)" onclick="$('#btn').animatescroll();") Buttons
+  body
+    nav(id="nav-primary")
+      a(href="javascript:void(0)" class="oi off-canvas-nav" data-glyph="menu" title="menu" aria-hidden="true")
+      h2 Style Guide
+      a(href="javascript:void(0)" onclick="$('#guidelines').animatescroll();") Guidelines
+      a(href="javascript:void(0)" onclick="$('#colors').animatescroll();") Color
+      a(href="javascript:void(0)" onclick="$('#type-style').animatescroll();") Typography
+      a(href="javascript:void(0)" onclick="$('#iconography').animatescroll();") Icons
+      a(href="javascript:void(0)" onclick="$('#btn').animatescroll();") Buttons
     div(id="sg-wrapper")
       article(id="guidelines") 
         h1 User Interface Guidelines

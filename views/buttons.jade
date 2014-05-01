@@ -2,26 +2,31 @@ block buttons
   article
     h1(id="btn") Buttons
     div(class="sg-type-space")
-      div(class="sg-displayFlex")
-        a(href="" class="oi btn Alpha" data-glyph="heart" title="heart" aria-hidden="true") Heart
-        a(href="" class="oi btn Bravo" data-glyph="paperclip" title="paperclip" aria-hidden="true") Add
-        a(href="" class="oi btn Charlie" data-glyph="trash" title="trash" aria-hidden="true") Trash
-        a(href="" class="oi btn Delta" data-glyph="account-logout") Logout
-        a(href="" class="oi btn Echo" data-glyph="calendar" title="calendar" aria-hidden="true") Calendar
+      div(class="sg-button-container")
+        button(ahref="#" class="oi Alpha" data-glyph="heart" title="heart" aria-hidden="true") 
+          span Heart
+        button(href="" class="oi Bravo" data-glyph="paperclip" title="paperclip" aria-hidden="true") 
+          span Add
+        button(href="" class="oi Charlie" data-glyph="trash" title="trash" aria-hidden="true") 
+          span Trash
+        button(href="" class="oi Delta" data-glyph="account-logout") 
+          span Logout
+        button(href="" class="oi Echo" data-glyph="calendar" title="calendar" aria-hidden="true") 
+          span Calendar
     div(class="code-block")
       h4 Jade   
       pre
         code(class="language-markup").
-          a(href="" class="oi btn Alpha" data-glyph="heart" title="heart" aria-hidden="true") Heart
-          a(href="" class="oi btn Bravo" data-glyph="paperclip" title="paperclip" aria-hidden="true") Add
-          a(href="" class="oi btn Charlie" data-glyph="trash" title="trash" aria-hidden="true") Trash
-          a(href="" class="oi btn Delta" data-glyph="account-logout") Logout
-          a(href="" class="oi btn Echo" data-glyph="calendar" title="calendar" aria-hidden="true") Calendar
+          a(href="" class="oi Alpha" data-glyph="heart" title="heart" aria-hidden="true") Heart
+          a(href="" class="oi Bravo" data-glyph="paperclip" title="paperclip" aria-hidden="true") Add
+          a(href="" class="oi Charlie" data-glyph="trash" title="trash" aria-hidden="true") Trash
+          a(href="" class="oi Delta" data-glyph="account-logout") Logout
+          a(href="" class="oi Echo" data-glyph="calendar" title="calendar" aria-hidden="true") Calendar
     div(class="code-block")
       h4 SCSS
       pre
         code(class="language-scss").
-          .btn{
+          button{
             position: relative;
             width: 120px;
             padding: 0;
