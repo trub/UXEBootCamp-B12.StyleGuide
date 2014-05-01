@@ -177,11 +177,19 @@ button {
 }
 
 //OFF CANVAS NAV
+
+@include media($tablet) {
 .mobile-nav{
   @include transform(translateX(9em));
   @include transition (all .25s ease-in-out);
   background-color: whitesmoke;
+}
 
+.sg-canvas{
+  @include transform(translateX(10em));
+  @include transition (all .25s ease-in-out);
+
+}
 }
 
 .off-canvas-nav {
@@ -196,11 +204,7 @@ button {
   }
 }
 
-.sg-canvas{
-  @include transform(translateX(10em));
-  @include transition (all .25s ease-in-out);
 
-}
 
 
 
