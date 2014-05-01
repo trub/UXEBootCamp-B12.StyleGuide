@@ -1,5 +1,5 @@
 block typography
-	article(id="type-style") 
+	article(id="type-style")
 		h1 Typography
 		div(class="sg-type-space")
 			h1 This is an h1 (Main Head)
@@ -8,9 +8,10 @@ block typography
 			h4 This is an h4
 			p This is a paragraph about Dale.
 			a(href="#") This is a link
-		div(class="code-block") 
+		a(href="javascript:void(0)" id="code-toggle-typography") View Code
+		div(class="code-block-typography")
 			h4 Jade
-			pre 
+			pre
 				code(class="language-markup").
 					h1 This is an h1 (Main Head)
 					h2 This is an h2 (Subhead)
@@ -18,7 +19,7 @@ block typography
 					h4 This is an h4
 					p  This is a paragraph about Dale
 					a(href="#") This is a link
-		div(class="code-block")
+		div(class="code-block-typography")
 			h4 SCSS
 			pre
 				code(class="language-scss").
@@ -31,7 +32,7 @@ block typography
 						font-size: 1.953em;
 					}
 					h3 {
-						font-size: 1.563em; 
+						font-size: 1.563em;
 					}
 					h4 {
 						font-size: 1.25em;
