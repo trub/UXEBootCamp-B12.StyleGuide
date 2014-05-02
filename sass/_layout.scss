@@ -15,16 +15,23 @@ nav {
    z-index: 1;
    position: fixed;
    width:11em;
-   padding-left: 1em;
+   padding-left: 1.25em;
    left:0;
    top:0;
+   background-color: whitesmoke;
+   img{
+    width: 60%;
+    margin-left: 1.25em;
+    margin-bottom: -.5em;
+    margin-top: 2em;
+   }
 
    height:100%;
    @include media($desktop) {
     left:0em;
    }
    @include transition (all .25s ease-in-out);
-   background-color: whitesmoke;
+
     @include media($tablet) {
       left: -9em;
       background-color: white;
@@ -35,7 +42,7 @@ nav {
   a {
     padding: 0.5em 0.5em 0.5em 0.5em;
     &:first-child{
-      padding-top: 1.5em;
+      padding-top: 1.25em;
     }
   }
   ul, li{
@@ -49,6 +56,10 @@ nav {
   }
   h2 {
     padding: 0.2em;
+    margin-top: 2em;
+    text-indent: .2em;
+    margin-bottom: .5em;
+    font-size: 1.3em;
   }
 }
 
@@ -166,7 +177,7 @@ code {
 .sg-button-container {
   @include shift(1.5);
   @include media($tablet) {
-    @include shift(1);
+    @include shift(2);
   }
   @include media($mobile) {
     @include shift(0);

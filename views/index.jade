@@ -4,6 +4,7 @@ block content
   body
     nav(id="nav-primary")
       a(href="javascript:void(0)" class="oi off-canvas-nav" data-glyph="menu" title="menu" aria-hidden="true")
+      img(src="../img/mail-boss-logo.svg")
       h2 Style Guide
       a(href="javascript:void(0)" onclick="$('#guidelines').animatescroll();") Guidelines
       a(href="javascript:void(0)" onclick="$('#colors').animatescroll();") Color
@@ -12,7 +13,7 @@ block content
       a(href="javascript:void(0)" onclick="$('#btn').animatescroll();") Buttons
       a(href="javascript:void(0)" onclick="$('#forms').animatescroll();") Forms
     div(id="sg-wrapper")
-      article(id="guidelines") 
+      article(id="guidelines")
         h1 User Interface Guidelines
         p The User Interface Style Guide is here to help maintain your brand across multiple platforms (desktop, tablet, mobile, ios, android, etc) and across multiple markets. Constant iteration requires both an efficient workflow and a well defined collection of core UI elements that can be assembled quickly. Reinventing the wheel is out and standards are in.
         p This documentation references our core UI patterns. It is our hope this guide will decrease uncertainty in the workplace and increase efficiency. This uniform lexicon of code and UI elements benefits us in a many ways:
@@ -21,11 +22,11 @@ block content
           li We can reuse code instead of roping in a developer
           li We can maintain our code by seeing our patterns in one place, define elements in our application, and keep redundancy to a minimum
           li We add new patterns only when the case for doing so is sound. New patterns come at a high cost—they require new design elements, additional code, maintenance, and they increase the cognitive load on users.
-      include colors      
+      include colors
       include typography
       include icons
-      include buttons    
+      include buttons
       include forms
-      
+
 
 
