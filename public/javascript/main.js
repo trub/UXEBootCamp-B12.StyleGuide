@@ -16,3 +16,8 @@ $("#code-toggle-buttons").on("click",function(){
 });
 
 
+$("#code-toggle-forms").on("click",function(){
+  $(".code-block-forms").toggleClass("code-show");
+});
+
+
